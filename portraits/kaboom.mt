@@ -1,4 +1,5 @@
 import "materials/debug" =~ [=> debugNormal]
+parameter CSG :DeepFrozen
 exports (geometry)
 
 # Imitation tinykaboom.

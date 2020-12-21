@@ -12,3 +12,10 @@ uncompressed PNG which looks like:
 
 ![raytraced
 geometry](https://github.com/MostAwesomeDude/csg/blob/master/example.png)
+
+Possible problems:
+
+* Invalid CSG? The CSG grammar is specified by
+  [lib/csg](https://github.com/monte-language/typhon/blob/master/mast/lib/csg.mt)
+* Typhon crashes? Double-check that you don't have undefined names; remember
+  to bring in CSG as a parameter, not an import.
