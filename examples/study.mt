@@ -4,7 +4,7 @@ exports (geometry)
 
 # A sphere study.
 
-def checker :DeepFrozen := CSG.Lambert(CSG.Checker(), CSG.Color(0.1, 0.1, 0.1))
+def checker :DeepFrozen := CSG.Lambert(CSG.Checker())
 
 def geometry :DeepFrozen := CSG.Union(
     CSG.Translation(CSG.Sphere(100.0, checker), 0.0, -100.0, 0.0), [

@@ -10,7 +10,7 @@ def mirrorLike(specular, diffuse) as DeepFrozen:
     colors.
     "
 
-    return CSG.Phong(specular, diffuse, zero, 128.0)
+    return CSG.Phong(specular, diffuse, 128.0)
 
 # A clean unpowered smartphone screen.
 def blackMirror :DeepFrozen := mirrorLike(

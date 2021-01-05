@@ -11,7 +11,6 @@ def red :DeepFrozen := CSG.Color(0.7, 0.04, 0.04)
 def glass :DeepFrozen := CSG.Phong(
     CSG.Color(0.5, 0.5, 0.5),
     CSG.Color(0.0, 0.0, 0.0),
-    CSG.Color(0.1, 0.1, 0.1),
     125.0,
 )
 

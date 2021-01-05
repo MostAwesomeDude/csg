@@ -8,7 +8,6 @@ exports (geometry)
 def iron :DeepFrozen := CSG.Phong(
     CSG.Color(0.7, 0.7, 0.7),
     CSG.Color(0.56, 0.57, 0.58),
-    CSG.Color(0.1, 0.1, 0.1),
     25.0,
 )
 

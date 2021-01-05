@@ -19,7 +19,6 @@ exports (
 def ivory :DeepFrozen := CSG.Phong(
     CSG.Color(0.3, 0.3, 0.3),
     CSG.Color(0.4, 0.4, 0.3),
-    CSG.Color(0.1, 0.1, 0.1),
     50.0,
 )
 
@@ -28,13 +27,11 @@ def ivory :DeepFrozen := CSG.Phong(
 def emerald :DeepFrozen := CSG.Phong(
     CSG.Color(0.633, 0.727811, 0.633),
     CSG.Color(0.07568, 0.61424, 0.07568),
-    CSG.Color(0.0215, 0.1745, 0.0215),
     76.8,
 )
 def jade :DeepFrozen := CSG.Phong(
     CSG.Color(0.316228, 0.316228, 0.316228),
     CSG.Color(0.54, 0.89, 0.63),
-    CSG.Color(0.135, 0.2225, 0.1575),
     12.8,
 )
 
@@ -43,7 +40,6 @@ def jade :DeepFrozen := CSG.Phong(
 def silver :DeepFrozen := CSG.Phong(
     CSG.Color(0.508273, 0.508273, 0.508273),
     CSG.Color(0.50754, 0.50754, 0.50754),
-    CSG.Color(0.19225, 0.19225, 0.19225),
     51.2,
 )
 
@@ -51,9 +47,4 @@ def silver :DeepFrozen := CSG.Phong(
 # color in the diffuse component instead of specular; rubber *does* absorb
 # pigmentation and is naturally white.
 def rubber(color) as DeepFrozen:
-    return CSG.Phong(
-        CSG.Color(0.4, 0.4, 0.4),
-        color,
-        CSG.Color(0.1, 0.1, 0.1),
-        10.0,
-    )
+    return CSG.Lambert(color)

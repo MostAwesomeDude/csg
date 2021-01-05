@@ -6,6 +6,6 @@ exports (geometry)
 def material := CSG.Phong(
     CSG.Color(0.8, 0.8, 0.8),
     CSG.Marble(2.0, 0.5, 2.0),
-    CSG.Color(0.1, 0.1, 0.1), 75.0)
+75.0)
 
 def geometry :DeepFrozen := CSG.Sphere(3.0, material)
