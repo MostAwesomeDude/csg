@@ -1,4 +1,5 @@
 import "materials/kilgard" =~ [=> ivory, => rubber]
+import "materials/mirror" =~ [=> blackMirror]
 parameter CSG :DeepFrozen
 exports (geometry)
 
@@ -13,14 +14,6 @@ def glass :DeepFrozen := CSG.Phong(
     CSG.Color(0.1, 0.1, 0.1),
     125.0,
 )
-# def mirror := makeGlassy(1.0, [0.0, 10.0, 0.8, 0.0], V(1.0, 1.0, 1.0), 1425.0)
-# XXX glassy
-def mirror :DeepFrozen := CSG.Phong(
-    CSG.Color(1.0, 1.0, 1.0),
-    CSG.Color(0.0, 0.0, 0.0),
-    CSG.Color(0.8, 0.8, 0.8),
-    128.0,
-)
 
 # tinyraytracer.
 def geometry :DeepFrozen := CSG.Union(
@@ -28,5 +21,5 @@ def geometry :DeepFrozen := CSG.Union(
     CSG.Translation(CSG.Sphere(2.0, ivory), -7.0, 0.0, -12.0),
     CSG.Translation(CSG.Sphere(2.0, glass), -4.0, -1.5, -9.0),
     CSG.Translation(CSG.Sphere(3.0, rubber(red)), -1.5, -0.5, -15.0),
-    CSG.Translation(CSG.Sphere(4.0, mirror), -11.0, 5.0, -11.0),
+    CSG.Translation(CSG.Sphere(4.0, blackMirror), -11.0, 5.0, -11.0),
 ])

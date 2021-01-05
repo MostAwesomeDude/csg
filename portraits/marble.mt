@@ -8,4 +8,4 @@ def material := CSG.Phong(
     CSG.Marble(2.0, 0.5, 2.0),
     CSG.Color(0.1, 0.1, 0.1), 75.0)
 
-def geometry :DeepFrozen := CSG.Sphere(2.0, material)
+def geometry :DeepFrozen := CSG.Sphere(3.0, material)
