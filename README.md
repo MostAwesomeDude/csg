@@ -5,7 +5,7 @@ raytracer](https://github.com/monte-language/typhon/blob/master/mast/games/sdf.m
 To run the raytracer, point it at this directory for the import base, and then
 the name of the geometry that one wishes to render. For example:
 
-    monte eval ~/typhon/mast/games/sdf.mt.md eval -size 320x200 -supersample 5 ~/csg portraits/sines
+    monte eval ~/typhon/mast/games/sdf.mt.md -size 320x200 -supersample 5 ~/csg portraits/sines
 
 Which will take several minutes, printing progress, and eventually yield an
 uncompressed PNG which looks like:
